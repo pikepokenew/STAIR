@@ -18,32 +18,77 @@ import openai
 import os
 import time
 import logging
-
-def try_vllm(actor, tokenizer, node, config, terminators, retry_num=0):
+# global global_tokenizer
+def try_vllm(actor, tokenizer, node, config, terminators, retry_num=0, stop_tokens = []):
+    
     try:
+        ###
+        messages = []
+        messages.append({"role": "user", "content": node.prompt})
+        prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt = True)
+        # prompt
+        prompt_with_template = prompt
+        if isinstance(node.trajectory, str):
+            prompt_with_template += node.trajectory
+        elif isinstance(node.trajectory, list):
+            # prompt_with_template += trajectory_to_response(node.trajectory)
+            for resp in node.trajectory:
+                prompt_with_template += resp
+        else:
+            print(node.trajectory)
+            assert False, "wrong response type"
+        ###
+        prompt = prompt_with_template
+        raw_terminators = terminators
+        stop_words = []
+        for stop_ in stop_tokens:
+            if "\\n" in stop_:
+                stop_ = stop_.replace('\\n', '\n')
+            stop_words.append(stop_)
+
+        terminators = [t for t in raw_terminators if t is not None]
         completion = actor.completions.create(
             model="actor",
             # no bos since vllm will automatically generate bos
-            prompt=apply_chat_template(node.prompt, node.trajectory, tokenizer, add_bos=False),
+            prompt=prompt,
             echo=False,
             max_tokens=config.max_tokens,
             temperature=config.temperature,
             top_p=config.top_p,
+            # stop = stop_words,
             extra_body={
-                "stop_token_ids": terminators,
+                # "stop_token_ids": terminators,
                 "top_k": config.top_k,
+                "stop": stop_words,
                 "skip_special_tokens": False,
                 "include_stop_str_in_output": True
             }
         )
-        return completion.choices[0].text
+        # completion = actor.completions.create(
+        #     model="actor",
+        #     # no bos since vllm will automatically generate bos
+        #     prompt=apply_chat_template(node.prompt, node.trajectory, tokenizer, add_bos=False),
+        # )
+        # messages = []
+        # question = {"role": "user", "content": "hi"}
+        
+        # messages.append(question)
+        # prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt = True)
+        # completion = actor.completions.create(
+        #     model="actor",
+        #     # no bos since vllm will automatically generate bos
+        #     prompt=prompt,
+        #     # messages = messages,
+        # )
+        # print(f"completion:{completion}")
     except Exception as e:
         logging.warning("VLLM ERROR: " + str(e))
         retry_num += 1
         time.sleep(2**retry_num)
         logging.warning(node.prompt + " RETRY!!!!!! RETRY TIME: " + str(retry_num))
         return try_vllm(actor, tokenizer, node, config, terminators, retry_num)
-
+    # import pdb; pdb.set_trace()
+    return completion.choices[0].text
 def parse_args():
     args = argparse.ArgumentParser()
     args.add_argument('--custom_cfg', type=str, default="../config/tree_generate_test.yaml")
@@ -82,14 +127,15 @@ def generate_action(actor, tokenizer, node:mcts_node, config):
             p = torch.sum(prob) / len(prob)
         return tokenizer.decode(response, skip_special_tokens=False), float(p)
     else:
-        return try_vllm(actor, tokenizer, node, config, terminators), 1.0
+        return try_vllm(actor, tokenizer, node, config, terminators, stop_tokens = config.stop_tokens), 1.0
 
 # for outcome -1<=reward<=1; for safe-constraint -2k1-k2<=reward<=2k1+k2
 def _get_reward(prompt, whole_answer, ground_truth, question_type, config, retry_num=0):
+    # import pdb; pdb.set_trace()
     try:
         # You can define your own evaluate orm. Should return safe_score, helpful_score (-1 <= both of them <= 1)
         mode = config.mode
-        safe_score, helpful_score = evaluate(mode, prompt, whole_answer, ground_truth, question_type)
+        safe_score, helpful_score = evaluate(mode, prompt, whole_answer, ground_truth, question_type, tokenizer=global_tokenizer)
         if mode == "outcome":
             if question_type == "safety":
                 return safe_score
@@ -140,7 +186,8 @@ def rollout_and_get_reward(actor, tokenizer, node:mcts_node, ground_truth, confi
         rollout_action = tokenizer.decode(response, skip_special_tokens=False)
         answer += rollout_action
     else:
-        rollout_action = try_vllm(actor, tokenizer, node, config, terminators)
+        # import pdb; pdb.set_trace()
+        rollout_action = try_vllm(actor, tokenizer, node, config, terminators, stop_tokens = [])
         answer = ""
         for action in node.trajectory:
             answer += action
@@ -163,7 +210,7 @@ def thread_function(prompts_data, config, worker_order):
             base_url=openai_api_base,
         )
         actor_tokenizer = AutoTokenizer.from_pretrained(config.actor_model_dir)
-
+        # global_tokenizer = actor_tokenizer
     if config.use_cache:
         folder_path = os.path.join(config.cache_dir, str(worker_order))
         if not os.path.exists(folder_path):
@@ -172,6 +219,7 @@ def thread_function(prompts_data, config, worker_order):
 
     output_content = []
     for prompt_index, prompt in enumerate(prompts_data):
+        # import pdb; pdb.set_trace()
         if config.use_cache and prompt["question"] in cache:
             mct_data = cache[prompt["question"]]
             output_content.append(mct_data)
@@ -270,7 +318,9 @@ def main():
     config = OmegaConf.create(OmegaConf.to_yaml(config, resolve=True))
     logging.basicConfig(filename=config.log_file, level=logging.INFO)
     logging.info("CONFIG IS:"+str(config))
-
+        # actor_tokenizer = AutoTokenizer.from_pretrained(config.actor_model_dir)
+    global global_tokenizer
+    global_tokenizer = AutoTokenizer.from_pretrained(config.actor_model_dir)
     prompts_data = read_json(config.train_prompt_path)
     logging.info("PROMPT DATA LOADED")
 

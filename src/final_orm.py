@@ -22,6 +22,7 @@ Give your conclusion at the end of your response with a new line. The format sho
 
 def extract_answer(answer: str):
     answer = answer.split('<|eot_id|>')[0].split('<|/Reasoning_step|>')[-1].split('<|Output|>')[-1].split('<|/Output|>')[0]
+    answer = answer.split('</think>')[-1].split("<｜end▁of▁sentence｜>")[0]
     return answer.strip()
 
 def apply_template(prompt: str, answer: str, label: str, eval_type: str):
@@ -33,21 +34,27 @@ def rule_generate(answer):
         return 1
     return -1
 
-def self_generate(eval_prompt):
+def self_generate(eval_prompt, tokenizer):
+    messages = []
+    messages.append({"role": "user", "content": eval_prompt})
+    prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt = True)
+    # prompt
+    # prompt_with_template = prompt
     openai_api_key = "EMPTY"
-    openai_api_base = "http://0.0.0.0:80/v1"  # TODO: Use your own url
+    openai_api_base = "http://127.0.0.1:8081/v1"  # TODO: Use your own url
     actor = OpenAI(
         api_key=openai_api_key,
         base_url=openai_api_base,
     )
     completion = actor.completions.create(
         model="actor",
-        prompt=apply_chat_template(eval_prompt, "", None, add_bos=False),
+        prompt=prompt,
         echo=False,
-        max_tokens=2048,
+        max_tokens=4096,
         temperature=0.6,
         top_p=0.9
     )
+    # import pdb; pdb.set_trace()
     return completion.choices[0].text
 
 def self_extract_evaluation(response, eval_type):
@@ -65,7 +72,8 @@ def self_extract_evaluation(response, eval_type):
     return (llama_label - 3) / 2
 
 
-def evaluate(mode:str, prompt: str, whole_answer: str, label: str, eval_type: str):
+def evaluate(mode:str, prompt: str, whole_answer: str, label: str, eval_type: str, tokenizer = None):
+    # import pdb; pdb.set_trace()
     extracted_answer = extract_answer(whole_answer)
     # you may build another strategy
     if eval_type == "safety":
@@ -73,6 +81,6 @@ def evaluate(mode:str, prompt: str, whole_answer: str, label: str, eval_type: st
         return score, -1
     else:
         eval_prompt = apply_template(prompt, extracted_answer, label, eval_type)
-        response = self_generate(eval_prompt)
+        response = self_generate(eval_prompt, tokenizer=tokenizer)
         score = self_extract_evaluation(response, eval_type)
         return 1, score

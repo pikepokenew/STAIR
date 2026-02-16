@@ -1,0 +1,26 @@
+actor_model_dir: "/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3"
+mode: "safe-constraint"
+generate_mode: "vllm"
+worker_num: 32
+server_url: http://127.0.0.1:8081/v1
+worker_prompt_num: 1
+temperature: 1.2
+top_p: 0.9
+top_k: 50
+max_tokens: 4096
+seed: 42
+stop_tokens: ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\n\n']
+end_tokens: ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>']
+train_prompt_path: "/home/dwu/STAIR/prompt_data/mct_data.json"
+output_path: "/home/dwu/STAIR/output/mct_data_v2"
+c: 1.5
+max_depth: 7
+iterations: 200
+generate_samples_number: 4
+visit_all_node: True
+p_average_strategy: "uniform"
+able_to_reselected: True
+score_type: "UCB"
+use_cache: True
+cache_dir: "/home/dwu/STAIR/cache_v3"
+log_file: "/home/dwu/STAIR/log/log_v3.txt"

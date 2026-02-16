@@ -1,0 +1,1915 @@
+INFO:root:CONFIG IS:{'actor_model_dir': '../actor', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 3, 'server_url': 'http://0.0.0.0:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 16000, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:root:THREAD 1 BEGIN
+INFO:root:THREAD 2 BEGIN
+INFO:root:CONFIG IS:{'actor_model_dir': 'actor', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 3, 'server_url': 'http://0.0.0.0:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 16000, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:root:THREAD 1 BEGIN
+INFO:root:THREAD 2 BEGIN
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 3, 'server_url': 'http://0.0.0.0:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 16000, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:root:THREAD 1 BEGIN
+INFO:root:THREAD 2 BEGIN
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.430889 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.452381 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.779869 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.933116 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.429189 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: Error code: 502
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.909884 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: Error code: 502
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: Error code: 502
+WARNING:root:when did the chineses room 2 theory come out RETRY!!!!!! RETRY TIME: 1
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.483734 seconds
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 1
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.465159 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.759265 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.955236 seconds
+WARNING:root:Here are two questions (Question1 and Question2). If these questions have the same meaning and same answer, answer "Yes", otherwise "No".
+
+Example Input: Question1: What's the difference between Forever 21, For Love 21, and Love 21?, Question2: What is the sizing like for Forever 21?
+Example Output: No
+
+Example Input: Question1: Who discovered the modern periodic table?, Question2: Who invented the modern periodic table?
+Example Output: Yes
+
+Example Input: Question1: What are the best gadgets of 2016?, Question2: What are the best car gadgets in 2016?
+Example Output: RETRY!!!!!! RETRY TIME: 1
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.431134 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: Error code: 502
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.991347 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: Error code: 502
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: Error code: 502
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 3, 'server_url': 'http://0.0.0.0:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:root:THREAD 1 BEGIN
+INFO:root:THREAD 2 BEGIN
+WARNING:root:VLLM ERROR: 
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 3, 'server_url': 'http://0.0.0.0:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 1, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:root:THREAD 1 BEGIN
+INFO:root:THREAD 2 BEGIN
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.375722 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.486866 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.780120 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.902211 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 3, 'server_url': 'http://0.0.0.0:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 1, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:root:THREAD 1 BEGIN
+INFO:root:THREAD 2 BEGIN
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.451015 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.394452 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.391241 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.937739 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.763703 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.871542 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: Error code: 502
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: Error code: 502
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: Error code: 502
+WARNING:root:when did the chineses room 2 theory come out RETRY!!!!!! RETRY TIME: 1
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.388596 seconds
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 1
+WARNING:root:Here are two questions (Question1 and Question2). If these questions have the same meaning and same answer, answer "Yes", otherwise "No".
+
+Example Input: Question1: What's the difference between Forever 21, For Love 21, and Love 21?, Question2: What is the sizing like for Forever 21?
+Example Output: No
+
+Example Input: Question1: Who discovered the modern periodic table?, Question2: Who invented the modern periodic table?
+Example Output: Yes
+
+Example Input: Question1: What are the best gadgets of 2016?, Question2: What are the best car gadgets in 2016?
+Example Output: RETRY!!!!!! RETRY TIME: 1
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.444393 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.436748 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.827837 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.952808 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.771560 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: Error code: 502
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: Error code: 502
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: Error code: 502
+WARNING:root:when did the chineses room 2 theory come out RETRY!!!!!! RETRY TIME: 2
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.423710 seconds
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 2
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.463531 seconds
+WARNING:root:Here are two questions (Question1 and Question2). If these questions have the same meaning and same answer, answer "Yes", otherwise "No".
+
+Example Input: Question1: What's the difference between Forever 21, For Love 21, and Love 21?, Question2: What is the sizing like for Forever 21?
+Example Output: No
+
+Example Input: Question1: Who discovered the modern periodic table?, Question2: Who invented the modern periodic table?
+Example Output: Yes
+
+Example Input: Question1: What are the best gadgets of 2016?, Question2: What are the best car gadgets in 2016?
+Example Output: RETRY!!!!!! RETRY TIME: 2
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.480711 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.777803 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.840884 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.860326 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: Error code: 502
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: Error code: 502
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: Error code: 502
+WARNING:root:when did the chineses room 2 theory come out RETRY!!!!!! RETRY TIME: 3
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.399821 seconds
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 3
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.476329 seconds
+WARNING:root:Here are two questions (Question1 and Question2). If these questions have the same meaning and same answer, answer "Yes", otherwise "No".
+
+Example Input: Question1: What's the difference between Forever 21, For Love 21, and Love 21?, Question2: What is the sizing like for Forever 21?
+Example Output: No
+
+Example Input: Question1: Who discovered the modern periodic table?, Question2: Who invented the modern periodic table?
+Example Output: Yes
+
+Example Input: Question1: What are the best gadgets of 2016?, Question2: What are the best car gadgets in 2016?
+Example Output: RETRY!!!!!! RETRY TIME: 3
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.379741 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.827784 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.906540 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.829153 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: Error code: 502
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: Error code: 502
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: Error code: 502
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://0.0.0.0:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.427532 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.777697 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 1
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.432027 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.956540 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 2
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.476798 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.953634 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: Error code: 502
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://0.0.0.0:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.429120 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.779770 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://0.0.0.0:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.451107 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.935852 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://0.0.0.0:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+WARNING:root:VLLM ERROR: 
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://0.0.0.0:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.498046 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.962736 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://0.0.0.0:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+WARNING:root:VLLM ERROR: 
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://0.0.0.0:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.484834 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.953908 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0:8081/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:VLLM ERROR: 
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://0.0.0.0:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:openai._base_client:Retrying request to /completions in 0.411889 seconds
+INFO:openai._base_client:Retrying request to /completions in 0.983164 seconds
+WARNING:root:VLLM ERROR: 
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://0.0.0.0:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:openai._base_client:Retrying request to /completions in 0.419885 seconds
+INFO:openai._base_client:Retrying request to /completions in 0.908021 seconds
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://0.0.0.0:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://0.0.0.0:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:openai._base_client:Retrying request to /completions in 0.461922 seconds
+INFO:openai._base_client:Retrying request to /completions in 0.774067 seconds
+WARNING:root:VLLM ERROR: 
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 1
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:openai._base_client:Retrying request to /completions in 0.382410 seconds
+INFO:openai._base_client:Retrying request to /completions in 0.794807 seconds
+WARNING:root:VLLM ERROR: 
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+WARNING:root:VLLM ERROR: 
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 400 Bad Request"
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+WARNING:root:VLLM ERROR: 
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+WARNING:root:VLLM ERROR: 
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.420467 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.983206 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 1
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.449090 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.813622 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 2
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.390996 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.986246 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 3
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.379335 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.919675 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 4
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.465687 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.914356 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 5
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.407814 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.967219 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.488590 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.925246 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 1
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.496597 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.786587 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 2
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.465255 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.900083 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 3
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.439210 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.950253 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 4
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.468407 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.924276 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.488542 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.759504 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 1
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.459414 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.946041 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 2
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.468159 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.816172 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 3
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.428810 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.797896 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 4
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.483642 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.910135 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 5
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.391609 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.957168 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.439978 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.942342 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 1
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.474648 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.979726 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 2
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.459859 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.816087 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 3
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.390578 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.884719 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 4
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.458729 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.825405 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+WARNING:root:VLLM ERROR: Object of type ListConfig is not JSON serializable
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 1
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.426397 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.932406 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 1
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.498327 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.975815 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 2
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.495322 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.756241 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 3
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.434010 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.785771 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 4
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.381394 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.942484 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 5
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.380794 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.751997 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+WARNING:root:VLLM ERROR: 
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+WARNING:root:VLLM ERROR: 
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+WARNING:root:VLLM ERROR: 
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+WARNING:root:VLLM ERROR: 
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 1
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.482255 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.912339 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 1
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.384420 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.964028 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 2
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.465856 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.852370 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 3
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.408392 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.840535 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 4
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.400571 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.962527 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 5
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.497930 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.809715 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:Error code: 502
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+WARNING:root:ORM ERROR:
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.434708 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+INFO:openai._base_client:Retrying request to /completions in 0.816305 seconds
+INFO:httpx:HTTP Request: POST http://0.0.0.0/v1/completions "HTTP/1.1 502 Bad Gateway"
+WARNING:root:ORM ERROR:
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+WARNING:root:ORM ERROR:
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+WARNING:root:ORM ERROR:
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+WARNING:root:ORM ERROR:
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+WARNING:root:ORM ERROR:
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+WARNING:root:ORM ERROR:
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+WARNING:root:ORM ERROR:name 'global_tokenizer' is not defined
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 1
+WARNING:root:ORM ERROR:name 'global_tokenizer' is not defined
+WARNING:root:Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.
+
+Example Input: Pre-tax profit totaled EUR 397.4 mn , up from EUR 164.7 mn .
+Example Output: positive
+
+Example Input: Aho is proud of the company 's new product , Lordi-Cola .
+Example Output: neutral
+
+Example Input: `` The Government has had a very professional approach in assessing the offer .
+Example Output: RETRY!!!!!! RETRY TIME: 2
+WARNING:root:ORM ERROR:name 'global_tokenizer' is not defined
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+WARNING:root:ORM ERROR:
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+WARNING:root:ORM ERROR:
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/examples.json', 'output_path': '/home/dwu/STAIR/output/examples', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/examples.json', 'output_path': '/home/dwu/STAIR/output/examples', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/examples.json', 'output_path': '/home/dwu/STAIR/output/examples', 'c': 1.5, 'max_depth': 7, 'iterations': 10, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/examples.json', 'output_path': '/home/dwu/STAIR/output/examples', 'c': 1.5, 'max_depth': 7, 'iterations': 10, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:root:THREAD 0 END
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 1, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/examples.json', 'output_path': '/home/dwu/STAIR/output/examples', 'c': 1.5, 'max_depth': 7, 'iterations': 10, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:root:THREAD 0 END
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 4, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/examples.json', 'output_path': '/home/dwu/STAIR/output/examples', 'c': 1.5, 'max_depth': 7, 'iterations': 50, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:root:THREAD 1 BEGIN
+INFO:root:THREAD 2 BEGIN
+INFO:root:THREAD 3 BEGIN
+INFO:root:THREAD 0 END
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:root:THREAD 3 END
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+WARNING:root:ORM ERROR:invalid literal for int() with base 10: ''
+WARNING:root:Ans: yes
+
+Question: Claim: "Despite the name, Scotland Yard describes a headquarters in England, not Scotland."
+Is the claim above correct, and can it be verified by human common sense and without a web search?
+Options:
+- yes
+- no
+CoT: Anybody familiar with the United Kingdom's political system will know that Scotland Yard is not in Scotland, but rather, in London.
+
+
+
+Ans: no
+
+Question: Is the following a factual statement?
+"German Shepherds can only speak German."
+Options:
+- yes
+- no
+CoT: German Shepherds are dogs and can not speak any language.
+
+
+
+Ans: yes
+
+Question: "Canidae represents the biological family of dog like carnivorans."
+Is the above claim true?
+Options:
+- yes
+- no
+CoT: Canidae includes domestic dogs, wolves, foxes, coyotes and other extant and extinct species.
+
+
+
+Ans: yes
+
+Question: RETRY!!!!!! RETRY TIME: 1
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:root:THREAD 2 END
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 10, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 600, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/mct_data.json', 'output_path': '/home/dwu/STAIR/mct_data', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:root:THREAD 1 BEGIN
+INFO:root:THREAD 2 BEGIN
+INFO:root:THREAD 3 BEGIN
+INFO:root:THREAD 4 BEGIN
+INFO:root:THREAD 5 BEGIN
+INFO:root:THREAD 7 BEGIN
+INFO:root:THREAD 8 BEGIN
+INFO:root:THREAD 6 BEGIN
+INFO:root:THREAD 9 BEGIN
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/completions "HTTP/1.1 200 OK"
+INFO:root:THREAD 1 END
+INFO:root:CONFIG IS:{'actor_model_dir': '/home/dwu/LLaMA-Factory/models/DeepSeek-R1-Distill-Qwen-14B_peft_wildjailbreak_train_R1_Qwen_self_align_v2_sft_helpful_v3-0_UF_r64_64_5e-5_cosine_bs_4_ep_3', 'mode': 'safe-constraint', 'k1': 1.0, 'k2': 1.0, 'generate_mode': 'vllm', 'worker_num': 4, 'server_url': 'http://127.0.0.1:8081/v1', 'worker_prompt_num': 1, 'temperature': 1.2, 'top_p': 0.9, 'top_k': 50, 'max_tokens': 4096, 'seed': 42, 'stop_tokens': ['<|/Reasoning_step|>', '<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '\\n\\n'], 'end_tokens': ['<|/Output|>', '<|eot_id|>', '<|end_of_text|>', '<｜end▁of▁sentence｜>'], 'train_prompt_path': '/home/dwu/STAIR/prompt_data/examples.json', 'output_path': '/home/dwu/STAIR/output/examples', 'c': 1.5, 'max_depth': 7, 'iterations': 200, 'generate_samples_number': 4, 'visit_all_node': True, 'p_average_strategy': 'uniform', 'able_to_reselected': True, 'score_type': 'UCB', 'use_cache': True, 'cache_dir': '/home/dwu/STAIR/cache', 'log_file': '/home/dwu/STAIR/log/log.txt'}
+INFO:root:PROMPT DATA LOADED
+INFO:root:THREAD 0 BEGIN
+INFO:root:THREAD 1 BEGIN
+INFO:root:THREAD 2 BEGIN
+INFO:root:THREAD 3 BEGIN
+INFO:root:THREAD 1 END
+INFO:root:THREAD 2 END
+INFO:root:THREAD 0 END
+INFO:root:THREAD 3 END
